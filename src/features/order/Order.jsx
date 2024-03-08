@@ -51,7 +51,6 @@ function Order() {
 }
 
 export async function loader({ params }) {
-  const a = 12;
   const order = await getOrder(params.orderId);
   return order;
 }
