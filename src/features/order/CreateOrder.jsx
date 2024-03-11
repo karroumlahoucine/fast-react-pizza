@@ -1,4 +1,5 @@
-import { useState } from "react";
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react-refresh/only-export-components */
 import { Form, redirect, useActionData, useNavigation } from "react-router-dom";
 import { createOrder } from "../../services/apiRestaurant";
 
@@ -41,6 +42,7 @@ function CreateOrder() {
     <div>
       <h2>Ready to order? Let's go!</h2>
 
+      {/* <Form method="POST" action="/order/new"> */}
       <Form method="POST">
         <div>
           <label>First Name</label>

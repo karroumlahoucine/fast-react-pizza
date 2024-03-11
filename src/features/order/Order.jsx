@@ -11,16 +11,15 @@ import { useLoaderData } from "react-router-dom";
 function Order() {
   const order = useLoaderData();
   const {
-    id,
+    // id,
     status,
     priority,
     priorityPrice,
     orderPrice,
     estimatedDelivery,
-    cart,
+    //cart,
   } = order;
   const deliveryIn = calcMinutesLeft(estimatedDelivery);
-
   return (
     <div>
       <div>
